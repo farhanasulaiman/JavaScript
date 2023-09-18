@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    <script>
+        var s1="welcome javascript";
+        var a=s1.slice(1,5);
+        document.write("Actual string : "+s1+"<br>");
+
+        //after slicing from 1st index to 4th index.
+        document.write("after slicing : "+a+"<br>");
+
+        //after slicing from 6th index to 8th index including space.
+        var b=s1.slice(6,9);
+        document.write("after slicing : "+b+"<br>");
+
+        //after slicing from 10th index to last.
+        var c=s1.slice(10);
+        document.write("after slicing : "+c);
+    </script>
+</body>
+</html>

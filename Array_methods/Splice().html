@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        // 3. pop()
+        var fruits=["Banana","Mango","Orange","Apple"];
+        document.getElementById("demo").innerHTML="Actual Array<br>"+fruits;
+
+        //1: position 2:how many elements to be deleted
+        fruits.splice(1,2);
+        document.getElementById("demo1").innerHTML="After splicing(deletion)<br>"+fruits;
+        
+        //1:position 0:how many element to be deleted after 1st position
+        fruits.splice(1,0,"kiwi","pineapple","plum");
+        document.getElementById("demo2").innerHTML="After splicing(insertion without deleting)<br>"+fruits;
+        
+        fruits.splice(1,1,"cherry");
+        document.getElementById("demo3").innerHTML="After splicing(insertion after deleting)/Updation<br>"+fruits;
+    </script>
+</body>
+</html>

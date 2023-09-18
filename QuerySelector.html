@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector</title>
+</head>
+
+<body>
+    <h1>----Styling element---</h1>
+    <h3>Add a background color to the first p element:</h3>
+    <p>This is a p element.</p>
+    <p>This is a p element.</p>
+    <div>
+        <h1>----Styling element with id---<br></h1>
+        <p id="innerdiv">
+            hello this is inner content
+        </p>
+    </div>
+
+    <h1>---Styling element with class name---<br></h1>
+    <p class="ex1">Hello</p>
+    <p class="ex1">Welcome</p>
+    <script>
+        
+        //styling the p element
+        document.querySelector("p").style.backgroundColor="red";
+        let head1= document.querySelector("p");
+        head1.style.color="green";
+
+        //styling the p element with id
+        let inner=document.querySelector("#innerdiv");
+        inner.style.color="yellow";
+
+        //styling the p element with class
+        document.querySelector(".ex1").style.backgroundColor="pink";
+
+    </script>
+</body>
+
+</html>

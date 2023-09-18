@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Shape
+        {
+            area()
+            {
+                document.write("Shape : Circle<br>");
+                return 0;
+            }
+
+        }
+        class Circle extends Shape
+        {
+           constructor(radius)
+           {
+                super();
+                super.area();
+                this.radius=radius;
+           }
+            area()
+            {
+                var res;
+                res=Math.PI*(this.radius*this.radius);
+                document.write("Area of Circle : "+res);
+            }
+        }
+        var c1=new Circle(2);
+        c1.area();
+        
+    </script>
+</body>
+</html>

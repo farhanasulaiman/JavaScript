@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Concept</title>
+</head>
+<body>
+    <script>
+        //Declaring a class
+        class Employee
+        {
+            //Initializing an object
+            constructor(id,name)
+            {
+                this.id=id;
+                this.name=name;
+            }
+            //defining a function
+            show()
+            {
+                document.write("id : "+this.id+" Name : "+this.name+"<br>");
+            }
+        }
+        //passing an object to variable
+        var e1=new Employee(1,"Ann");
+        var e2=new Employee(2,"Alice");
+        //calling show function
+        e1.show();
+        e2.show();
+    </script>
+</body>
+</html>

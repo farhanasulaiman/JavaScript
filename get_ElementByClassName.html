@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header1">Welcome</h1>
+    <h2 class="header2">Have a nice day</h2>
+    <h3 class="header2">This is third header</h3>
+    <script>
+
+        //access 0th element with the class name header1
+        document.getElementsByClassName("header1")[0].innerHTML="This is header1";
+
+        //accessing all elements with class name header2
+        const nodes=document.getElementsByClassName("header2");
+        for(let i=0; i<nodes.length; i++)
+        {
+            nodes[i].innerHTML="This is 2nd & 3rd header";
+        }
+    </script>
+</body>
+</html>

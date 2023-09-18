@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable declaration</title>
+</head>
+<body>
+    <script>
+        document.write("---Using Var---");
+        var a=20;                  //have global scope. can declare anywhere in the prgm.
+        document.write(a);
+        var a=90;
+        document.write("value of a="+a);
+
+        document.write("---Using let---");
+        let b=90;
+        document.write(b);
+        //let b=40;               //not allowed to declare same variable name twice. have block scope
+
+        document.write("---Using const---");
+        const c=90;
+        document.write(c);
+
+        </script>
+</body>
+</html>

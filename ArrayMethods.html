@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="agep"></p>
+    <script>
+        var emp=["nom","tom","com","anto"];
+
+        //array is sliced without affecting original array.
+        document.write("Sliced Array : <br>"+emp.slice(3)+"<br>");
+        document.write("Original Array :<br>"+emp);
+
+        document.getElementById("demo").innerHTML="Reversed Array :<br>"+emp.reverse();
+        document.getElementById("demo1").innerHTML="Sorted Array :<br>"+emp.sort();
+
+        const ages=[33,89,16,30];
+        document.getElementById("agep").innerHTML=ages.filter(chkAdult);
+
+        function chkAdult(age)
+        {
+           return age>=18
+        }
+
+    </script>
+</body>
+</html>

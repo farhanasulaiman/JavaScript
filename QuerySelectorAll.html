@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector All </title>
+</head>
+
+<body>
+    <h2>The querySelectorAll() Method</h2>
+    <p>Add a background color all elements with class="content":</p>
+    <h2 class="content">A heading</h2>
+    <p class="content">A paragraph.</p>
+    <script>
+        let nodes= document.querySelectorAll(".content");
+        for(let i=0;i<nodes.length;i++){
+            nodes[i].style.backgroundColor="green";
+            nodes[i].innerHTML="new content";
+        }
+    </script>
+</body>
+
+</html>

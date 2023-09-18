@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Styling using assign() method</title>
+</head>
+<body>
+    <h1 id="head1">Heading1</h1>
+    <p class="p1">This is a paragraph1</p>
+    <p class="p1">This is a paragraph2</p>
+    <p class="p1">This is a paragraph3</p>
+</body>
+<script>
+    //styling to an element
+    let headobject={color:'yellow','background-color':'red','font-size':'xx-large'};
+    let heading1= document.querySelector("#head1");
+    Object.assign(heading1.style,headobject);
+
+    //styling to elements with class name p1
+    let paras=document.querySelectorAll(".p1");
+    let paraObject={color:'blue','font-style':'italic'};
+    for(let i=0;i<paras.length;i++){
+         Object.assign(paras[i].style,paraObject);
+    }
+</script>
+</html>

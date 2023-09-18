@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Concept</title>
+</head>
+<body>
+    <script>
+        //Declaring class
+        class Vehicle
+        {
+            constructor()
+            {
+                this.company="Honda";
+            }
+            // show()
+            // {
+            //     document.write("Company Model Price <br>");
+            // }
+        }
+        class Car extends Vehicle
+        {
+            constructor(model,price)
+            {
+                super();
+                this.model=model;
+                this.price=price;
+            }
+            show()
+            {
+                document.write("Company : "+this.company);
+                document.write(" Model : "+this.model);
+                document.write(" Price : "+this.price);
+                document.write("<br>");
+            }
+        }
+        var c1=new Car("m001",40000);
+        c1.show();
+        var c2=new Car("m002",50000);
+        c2.show();
+    </script>
+</body>
+</html>

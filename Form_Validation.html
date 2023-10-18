@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Validate_form()
+        {
+            var name=document.getElementById("tname").value;
+            var pwd=document.getElementById("tpwd").value;
+            if(name=="" || name==null)
+            {
+                document.getElementById("stext").innerHTML="Please enter Name";
+                return false;
+            }
+            else if(pwd.length==0)
+            {
+                document.getElementById("spwd").innerHTML="Please enter password";
+                return false;
+            }
+            else if(pwd.length<6)
+            {
+                document.getElementById("spwd").innerHTML="Password must be at least 6 characters long";
+                return false;
+            }
+        }
+        function clear_msg(sp)
+        {
+            document.getElementById(sp).innerHTML="";
+        }
+    </script>
+    <form name="myform" method="post" action="abc.html" onsubmit="return Validate_form();">
+        <label>Name :</label>
+        <input type="text" id="tname" onkeyup="clear_msg('stext')"/>
+        <span id="stext" style="color: red;"></span><br><br>
+        <label>Password :</label>
+        <input type="Password" id="tpwd" onkeyup="clear_msg('spwd')"/>
+        <span id="spwd" style="color: red;"></span><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
